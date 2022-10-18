@@ -142,6 +142,7 @@ button:active {
  width: 100%;
  max-width: 1200px;
  margin: 0 auto;
+
 }
 
 /* HIGHLIGHTS */
@@ -169,7 +170,6 @@ button:active {
 
 
 
-
 #highlights::before {
     transform: translateY(-100%);
     top: 1;
@@ -177,7 +177,7 @@ button:active {
 
 #highlights:after {
     bottom: 1;
-    transform: translateY(100%) rotate(180deg);
+    transform: translateY(0%) rotate(180deg);
 }
 
 .highlight__wrapper {
