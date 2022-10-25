@@ -270,3 +270,16 @@ button:active {
     padding-right: 6px;
     opacity: 50%;
 }
+
+/* LATEST BOOKS */
+
+h3{
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 32px;
+}
+
+.books__latest {
+    display: flex;
+    flex-wrap: wrap;
+}
