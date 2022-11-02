@@ -98,6 +98,7 @@ li {
     text-align: center;
     border: none;
     color: #F08080;
+    display: none; 
 }
 
 .menu__backdrop {
@@ -111,11 +112,23 @@ li {
     display: flex;
     justify-content:center;
     align-items: center;
-    display: none;
+    opacity: 0;  
+    transition:  all 300ms ease;     
+    visibility: hidden;
+}
+
+/* By making the opacity 0 and visibility hidden it allows the menu be animated.
+By setting the Display:none it is resistant to manipulation */
+
+.menu--open {
+    max-height: 100vh;
+    overflow: hidden;
 }
 
 .menu--open .menu__backdrop {
     display: flex;
+    visibility: visible;
+    opacity: 1;
 }
 
 .menu__links {
@@ -426,6 +439,10 @@ footer {
 
 @media (max-width:550px) {
     .nav__links {
-        display: none;
+        display: none;  
+    }
+
+    .btn__menu {
+        display: block
     }
 }
